@@ -1,0 +1,213 @@
+/* 私信 */
+.pm_container *{margin: 0; padding: 0;}
+.pm_container a, .pm_container a:link, .pm_container a:visited {color: #0a8cd2; text-decoration: none;}
+.pm_container .clearfix {zoom: 1;}
+
+.pm_container{width: 50px; /*height: 592px;*/ height: 91%; _height: 90%; border: 1px solid #969696; background: #F6F6F6; position: absolute; right: 0; z-index: 99; top: 71px; /*opacity: 0.65;*/ visibility: visible; box-shadow: 0 0 5px rgba(0,0,75,.2); -moz-transition: opacity .4s ease; -webkit-transition: opacity .4s ease; transition: opacity .4s ease 0s; font: 12px Arial,"宋体",Helvetica,sans-serif; color: #333;}
+.pm_container_hide{width: 0; border-width: 0;}
+.pm_main{width: 50px; /*height: 592px;*/ height: 95%; background: #fff; display: none;}
+
+/* 列头部搜索，以及底部按钮 S */
+.WBIM_icon_online, 
+.WBIM_icon_offline,
+.icon_no_shield,
+.icon_shield_all,
+.pm_container .state_search_btn .WBIM_icon_search_b
+{display: inline-block; background-image: url(images/first_add.png); background-repeat: no-repeat;}
+.WBIM_icon_online, 
+.WBIM_icon_offline,
+.WBIM_icon_busy,
+.WBIM_icon_away, 
+.WBIM_icon_drop {overflow: hidden; width: 10px; height: 10px;}
+
+.pm_container .state_search_btn {width:48px; height: 39px; text-align: center; cursor: pointer; background: #F6F6F6; border-bottom: 1px solid #969696; box-shadow: 0 2px 2px rgba(0,0,0,0.1); visibility: visible;}
+.pm_container .state_search_btn .WBIM_icon_search_b {margin-top: 12px; width: 16px; height: 16px; background-position: -91px -69px;}
+.pm_container .layer_setting{display: none;}
+
+.webim_list_setting .webim_state_new {width: 50px; height: 50px; overflow: hidden; position: absolute; _position: relative; bottom: 50px; _bottom: 0; border-bottom: solid 1px #c9d0da; border-top: solid 1px #c9d0da; box-shadow: 0 -1px 1px rgba(0,0,0,.1); cursor: pointer;}
+.webim_list_setting .webim_state_new a {display: block; background: #FFF; width: 48px; height: 48px; color: #333; text-align: center; border: 1px solid #FFF;}
+.webim_list_setting .webim_state_new i {margin: 12px 17px 2px;}
+.WBIM_icon_online {background-position: 0 0;}
+.WBIM_icon_offline {background-position: 0 -26px;}
+.icon_shield_all, .icon_no_shield{width: 12px; height: 10px; background-position: -26px -52px; margin: 8px 0 5px 17px; +margin: 8px 0 5px 0; display: block; font-size: 0;}
+.icon_no_shield{background-color: #7fdd44;}
+.icon_shield_all{background-color: #fff;}
+
+.pm_container .webim_list_setting {background: #fff; border-top: solid 1px #c9d0da; box-shadow: 0 -1px 1px rgba(0,0,0,.1); visibility: visible;}
+.webim_list_setting .subscribe {width: 50px; height: 50px; overflow: hidden; position: absolute; _position: relative; bottom: 0; _bottom: 0; border-bottom: solid 1px #c9d0da; border-top: solid 1px #c9d0da; box-shadow: 0 -1px 1px rgba(0,0,0,.1); cursor: pointer;}
+.webim_list_setting .subscribe a {display: block; background: #FFF; width: 48px; height: 48px; color: #333; text-align: center; border: 1px solid #FFF;}
+/* 列头部搜索，以及底部按钮 E */
+
+/* 列表 S */
+.pm_container .pm_list{/*height: 450px;*/ height: 85%; width: 50px; overflow-x: hidden; overflow-y: auto;}
+.pm_container .list_content_li{width: 50px !important; margin-bottom: 8px;}
+.pm_container .list_content_li li {height: 30px; position: relative; padding: 6px 10px; cursor: pointer; overflow: hidden; zoom: 1;}
+.pm_container .list_head {position: relative;}
+.pm_container .head_30 {width: 30px; height: 30px;}
+.pm_container .head_30 .head_pic {display: block; width: 30px; height: 30px;}
+.pm_container .W_chat_stat {display: inline-block; width: 7px; height: 7px; border-width: 1px; border-style: solid; border-radius: 2px; overflow: hidden;}
+.pm_container .W_chat_stat_offline {background-color: #D4D4D4; border-color: #B8B8B8;}
+.pm_container .W_chat_stat_online {background-color: #8FDC00; border-color: #48C000;}
+.pm_container .W_chat_stat_hiding {width: 9px; height: 9px; display: inline-block; background: url(images/first_add.png) no-repeat; background-position: 0 -53px; border: 0px;}
+.pm_container .list_content_li li:hover, .pm_container .list_content_li li.li_hover {background: #f0efef; padding: 5px 10px; border-top: solid 1px #e5e5e5; border-bottom: solid 1px #e5e5e5;}
+.pm_container .user_item_img {width: 30px; height: 30px;}
+.pm_container .WBIM_icon_new {position: absolute; top: -3px; left: -3px;}
+.pm_container .W_new {width: 12px; height: 10px; border: 2px solid #fff; border-radius: 4px; box-shadow: 0px 0px 2px 1px rgba(100,100,100,0.5); display: inline-block; overflow: hidden; 
+	background: url(images/first_add.png) no-repeat; background-position: -26px -52px; background-color: green;}
+/* 列表 E */
+
+/* 滑出按钮 S */
+.pm_container .pm_fold_btn {width: 10px; padding-left: 10px; height: 0; position: absolute; left: -22px; top: 50%; cursor: pointer; z-index: 90; display: block;}
+
+.pm_container .pm_fold_btn .btn_click {display: none; width: 10px; padding: 40px 0; margin-top: -40px; _margin: 0; _height: 80%; background: #f1f2f5; text-align: center; border: solid 1px #c0c4ca; border-right: none; border-radius: 20px 0 0 20px;}
+
+.pm_container .pm_fold_btn .btn_click .arrow_lf{display: inline-block; width: 0; height: 0; font-size: 0; border-width: 4px 4px 4px 0; border-style: dashed solid dashed dashed; border-color: transparent #444 transparent transparent; overflow: hidden; vertical-align: middle; line-height: 13px; -o-transform: none; -moz-transform: none; -webkit-transform: none; transform: none; writing-mode: lr-tb; _top: 40%; cursor: pointer;}
+.pm_container .pm_fold_btn .btn_click .arrow_lf_on{border-color: transparent #ffb33b transparent transparent;}
+.pm_container .pm_fold_btn .btn_click .arrow_rg{display: inline-block; width: 0; height: 0; font-size: 0; border-style: dashed dashed dashed solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent #444; overflow: hidden; vertical-align: middle; line-height: 13px; -o-transform: none; -moz-transform: none; -webkit-transform: none; transform: none; writing-mode: lr-tb; _top: 40%; cursor: pointer;}
+.pm_container .pm_fold_btn .btn_click .arrow_rg_on{border-color: transparent transparent transparent #ffb33b;}
+/* 滑出按钮 E */
+
+/* 私信窗口 S */
+.pm_chat_box{height: 448px; width: 316px; border: 1px solid #ababab; background: #fff; position: absolute; right: 68px; bottom: 0px; z-index: 99; display: none;}
+.pm_chat_box .head_pic img{width: 50px; height: 50px;}
+.pm_chat_con{}
+.pm_title{height: 32px; padding: 0 1px; color: #333; border-bottom: 1px solid #afafaf; background: url(images/first_add.png) 0 -143px repeat-x; 
+ line-height: 30px; cursor: pointer; color: #808080;}
+.pm_chat_box .wbim_tit2_lf {float: left; margin-left: 4px; display: inline;}
+.pm_chat_box .tit2_lf_con .webim_list_head {background: #fff; display: inline-block; padding: 1px; border: solid 1px #ababab; border-bottom: none; margin: -21px 10px 0 0; vertical-align: middle; _height: 50px; overflow: hidden; _margin-top: -22px;}
+.pm_chat_box .webim_head_50{width: 50px; height: 50px;}
+.pm_chat_box .webim_head_50 .head_pic { display: inline-block; width: 50px; height: 50px;}
+.pm_chat_box .webim_list_head {position: relative;}
+.pm_chat_box .webim_head_50 .W_chat_stat{position: absolute; bottom: 1px; right: 1px;}
+.pm_chat_box .tit2_lf_con .chat_name {margin-right: 5px;}
+
+.pm_chat_box .wbim_tit2_rt {float: right; display: inline; margin: 7px 8px 0 0;}
+.pm_chat_box .wbim_tit2_rt .icon_pm {margin-left: 6px;}
+
+.pm_chat_wrap{display: none;}
+
+/* 内容顶部 */
+.pm_chat_rt{float: left; width: 316px; height: 297px; position: relative;}
+.pm_chat_rt .wbim_chat_up{height: 297px; overflow: hidden; position: relative;}
+.pm_chat_rt .webim_chat_tips{width: 288px; display: block; visibility: visible; line-height: 15px; padding: 4px 5px 4px 9px; margin: 0 6px; box-shadow: inset 0 1px 1px rgba(255,255,255,.8); position: absolute; z-index: 2; zoom: 1;}
+.pm_chat_rt .webim_tips01 {background: #f3f8fc; border: solid 1px #d4e4f1;}
+.pm_chat_rt .webim_chat_tips .WBIM_icon_tipsclose { float: right; margin: 2px; _margin-top: 0;  display: none;}
+.pm_chat_rt .icon_pm {vertical-align: middle;float: left;}
+.pm_chat_rt .pm_icon_warnS{margin-right: 3px; vertical-align: middle;}
+
+/* 内容 */
+.pm_container .webim_dia_top{height: 15px; font-size: 0; display: block;}
+.pm_container .wbim_chat_list {position: relative; width: 316px;}
+	/* 屏蔽私信提示信息 */
+.pm_container .pm_shield_tips{width: 218px; height: 90px; position: absolute; z-index: 100; top: 50%; left: 50%; margin: -45px 0 0 -109px; 
+	border: 1px solid #c6c6c6; background: #fcfcfc;}
+.pm_container .pm_shield_tips .pm_confirm_info {padding: 3px 15px 15px; clear: both;}
+.pm_container .pm_shield_tips .wbim_confirm_p {margin: 10px auto; line-height: 20px;}
+.pm_container .pm_shield_tips .wbim_confirm_p .txt {display: inline-block; width: 180px; line-height: 16px; vertical-align: top;}
+.pm_container .pm_shield_tips .wbim_confirm_btn {text-align: center;}
+.pm_container .pm_shield_tips .wbim_confirm_btn a {margin: 0 5px;}
+.pm_container .pm_shield_tips a, .pm_container .pm_shield_tips a span {display: inline-block;vertical-align: middle;border-width: 1px;border-style: solid;
+border-radius: 2px;white-space: nowrap;overflow: hidden;text-align: center;}
+.pm_container .pm_shield_tips a span {padding: 0 7px 0 8px; height: 18px; line-height: 18px; vertical-align: top;}
+.pm_container .pm_shield_tips .WBIM_btn_confirm {border-color: #ff9b01; background-color: #ffa00a;}
+.pm_container .pm_shield_tips .WBIM_btn_confirm span{border-color: #ffb33b;}
+.pm_container .pm_shield_tips .WBIM_btn_cancel {border-color: #fff; background-color: #f2f2f2;}
+.pm_container .pm_shield_tips .WBIM_btn_confirm,
+.pm_container .pm_shield_tips .WBIM_btn_confirm:link,
+.pm_container .pm_shield_tips .WBIM_btn_confirm:visited,
+.pm_container .pm_shield_tips .WBIM_btn_confirm:hover{color: #fff;}
+.pm_container .pm_shield_tips .WBIM_btn_cancel,
+.pm_container .pm_shield_tips .WBIM_btn_cancel:link,
+.pm_container .pm_shield_tips .WBIM_btn_cancel:visited,
+.pm_container .pm_shield_tips .WBIM_btn_cancel:hover{color: #000;}
+
+
+
+.pm_container .webim_chat_dialogue {height: 297px; _height: 244px; _padding-bottom: 5px; overflow-x: hidden; overflow-y: auto; position: relative;}
+.pm_container .webim_dia_list{overflow: hidden; padding: 5px; display: block; visibility: visible;}
+.pm_container .webim_dia_l {*width: 238px; display: block; _display: inline-block; float: left; clear: both; +clear: none;}
+.pm_container .webim_dia_box, .pm_chat_rt .webim_dia_line {margin-top: 10px; line-height: 17px; }
+.pm_container .webim_dia_l .dia_info {margin-left: 18px; text-align: left; margin-bottom: 2px;}
+.pm_container .webim_dia_box .dia_info .info_date { color: #808080; vertical-align: -1px; white-space: pre; zoom: 1;}
+.pm_container .webim_dia_l .webim_dia_bg {background: #f3f3f3; border: solid 1px #eaeaea; box-shadow: inset -1px 1px 1px rgba(255,255,255,.75);}
+.pm_container .webim_dia_box .webim_dia_bg {min-width: 72px; max-width: 202px; margin: 0 8px; padding: 5px 9px; border-radius: 5px; position: relative;}
+.pm_container .webim_dia_box .webim_dia_bg .dia_txt{word-wrap: break-word; word-break: break-all;}
+.pm_container .webim_msg_end {text-align: center; padding: 10px 0; color: #999; clear: both;}
+
+.pm_container .webim_dia_r {+width: 238px; display: block; _display: inline-block; float: right; clear: both; +clear: none; margin-right: 6px;}
+.pm_container .webim_dia_r .dia_info {margin-right: 18px; _margin-right: 5px; text-align: right;}
+.pm_container .webim_dia_r .webim_dia_bg { background: #ebfbe3; border: solid 1px #dff0d8; box-shadow: inset 1px 1px 1px rgba(255,255,255,.75);}
+
+.pm_container .webim_dia_l .msg_arr {background-position: -26px -91px; left: -8px;}
+.pm_container .webim_dia_r .msg_arr {background-position: -28px -78px; right: -8px;}
+.pm_container .webim_dia_box .msg_arr {width: 8px; height: 12px; position: absolute; top: 8px;}
+
+/* 发送区域 */
+.pm_chat_sendbox{position: relative; clear: both;}
+.pm_container .sendbox_bar, .pm_container .sendbox_btn {background: #f3f3f3; line-height: 25px;}
+.pm_container .sendbox_bar{width: 316px; height: 25px; position: relative; z-index: 90; _padding: 3px 0; background: #f0f0f0;}
+.pm_container .sendbox_bar .sendbox_ac {float: left; padding-left: 10px;}
+.pm_container .sendbox_bar .sendbox_show {float: right; padding-right: 9px;}
+.pm_container .sendbox_bar .sendbox_his {color: #808080;}
+.pm_container .sendbox_bar .clearfix {display: block;}
+.pm_container .sendbox_bar .WBIM_icon_com {width: 16px; height: 16px; font-size: 0; line-height: 0; overflow: hidden;}
+.pm_container .sendbox_bar .sendbox_his .WBIM_icon_com {margin-right: 3px; vertical-align: middle;}
+.pm_container .sendbox_bar .WBIM_iconsend_his {background-position: -117px -78px;}
+.pm_container .sendbox_box {height: 68px;}
+.pm_container .sendbox_box .sendbox_area { width: 306px; height: 58px; padding: 5px; resize: none; border: none; background: #fff; outline-style: none; -webkit-appearance: none; overflow-y: auto;}
+.pm_container .sendbox_btn{position: relative;}
+.pm_container .sendbox_btn .btn { margin-top: -1px; margin-right: 3px; position: relative; float: left;}
+.pm_container .WBIM_btn_a {width: 43px; height: 20px; line-height: 20px; border-color: #ff9b01;background-color: #ffa00a; display: inline-block; vertical-align: middle; border-width: 1px; border-style: solid; border-radius: 2px; white-space: nowrap; overflow: hidden; text-align: center;}
+.pm_container .WBIM_btn_a span { padding: 0 7px 0 8px; height: 18px; border-color: #ffb33b; line-height: 18px; vertical-align: top; display: inline-block; border-width: 1px; border-style: solid; border-radius: 2px; white-space: nowrap; overflow: hidden; text-align: center; color: #fff; cursor: pointer;}
+.pm_chat_sendbox .pm_icon_shield, .pm_chat_sendbox .pm_icon_shieldover {width: 17px; height: 16px; vertical-align: middle;}
+.pm_chat_sendbox .pm_icon_shield{background-position: -117px -130px;}
+.pm_chat_sendbox .pm_icon_shieldover{background-position: -117px -156px;}
+/* 私信窗口 E */
+
+/* 私信迷你窗口 S */
+.pm_container .pm_win_minD {width: 182px; background: url(images/first_add.png) 0 -91px repeat-x; height: 24px; border: solid 1px #ababab; line-height: 24px; line-height: 26px\9; box-shadow: 0 0 5px rgba(0,0,75,.2); border-radius: 1px 1px 0 0; cursor: pointer;}
+.pm_container .pm_min_chat,
+.pm_container .pm_new_msg_num
+{ width: 162px; padding: 0 10px; line-height: 24px; _font-family: "宋体"; border-radius: 0; visibility: hidden; _display: none;}
+.pm_container .pm_min_chat_show,
+.pm_container .pm_new_msg_num_show{cursor: pointer; position: absolute; z-index: 2; bottom: 0px; right: 68px; visibility: visible;}
+.pm_container .pm_new_msg_num_show{color: #fff; background: url(images/first_add.png) 0 -117px repeat-x; z-index: 3; border-color: #E7E080;}
+.pm_container .pm_new_msg_num_show span{color: #177b2e; font-weight: bold;}
+/* 私信迷你窗口 E */
+
+/* 搜索 S */
+.layer_searchList{width: 186px; color: #333; border-radius: 3px; position: absolute; top: 0; right: 55px; visibility: visible; z-index: 99;}
+.layer_searchList .bg{padding: 3px; border-radius: 3px; background: url(images/layer_bg.png) repeat;}
+.layer_searchList .content{border: 1px solid #969696; position: relative; background: #fff; border-radius: 2px;}
+.layer_searchList .searchList_head{background: #f6f6f6; height: 38px; overflow: hidden; border-bottom: 1px solid #d9d9d9;}
+.layer_searchList .input_wrap{border: 1px solid #d9d9d9; width: 166px; margin: 5px 0 0 5px; height: 26px; overflow: hidden; background: #fff;}
+.layer_searchList input{width: 137px; height: 16px; padding-left: 5px; line-height: 16px; border: 0 none; margin-top: 5px; outline-style: none; -webkit-appearance: none; float: left; _display: inline;}
+.layer_searchList .search_return{position: relative; overflow: hidden; width: 100%;}
+.layer_searchList .search_return .list_content_li{width: auto !important;}
+.layer_searchList .list_head .head_pic{height: 30px; display: block; overflow: hidden;}
+.layer_searchList .list_head .head_pic img {width: 30px; height: 30px;}
+.layer_searchList .list_name {line-height: 30px; margin-left: 10px;}
+/* 搜索 E */
+
+/* 查看历史消息 S */
+.pm_more_msg{text-align: center; margin: 10px 0 -5px 0;}
+.pm_icon_clock{width: 16px; height: 16px; margin-right: 5px; vertical-align: -4px; _vertical-align: -2px; font-size: 0; line-height: 0; overflow: hidden; display: inline-block; background: url(images/first_add.png) no-repeat; background-position: -39px -52px;}
+/* 查看历史消息 E */
+
+/* icon */
+.icon_pm{display: inline-block; overflow: hidden; background-repeat: no-repeat; background-image: url(images/pm_icon.png); }
+.pm_icon_settingY {background-position: -13px 0; display: none;}
+.pm_icon_settingY:hover {background-position: -39px 0;}
+.pm_icon_minY {background-position: -13px -26px;}
+.pm_icon_minY:hover {background-position: -39px -26px;}
+.pm_icon_closeY {background-position: -13px -52px;}
+.pm_icon_closeY:hover {background-position: -39px -52px;}
+.pm_icon_warnS {background-position: -247px -104px;}
+.pm_icon_settingY, .pm_icon_minY, .pm_icon_closeY, .pm_icon_warnS {width: 16px; height: 16px;}
+
+/* Others */
+.list_head .WBIM_icon_dev, .list_head .W_chat_stat, .list_head .WBIM_chat_groupstat, .list_head .WBIM_icon_mobile, .list_head .WBIM_icon_desk_online, .list_head .WBIM_icon_desk_busy, .list_head .WBIM_icon_desk_away, .list_head .WBIM_icon_group, .list_head .WBIM_icon_groupshield, .list_head .WBIM_icon_drop {position: absolute; bottom: -1px; right: -1px;}
+.pm_container .rg20{right: 20px;}
+.pm_container .jspVerticalBar{width: 6px; /* Bar width */}
+.pm_container .jspHorizontalBar .jspArrow{width: 12px; /* Bar width */}
+.watermark{color: #a7a7a7;}

@@ -1,0 +1,214 @@
+<link href="css/pm.css" type="text/css" rel="stylesheet" />
+<!-- 私信 -->
+<div class="pm_container pm_container_hide" id="js-pm-container">
+    <!-- 私信 成员列表 S -->
+    <div class="pm_main">
+        <div class="webim_list_header clearfix">
+            <div class="layer_setting">
+                <ul class="setting_list">
+                    <li title="切换为在线状态">
+                        <a href="#" class="setting_cho"><em class="W_chat_stat W_chat_stat_online"></em><span class="setting_txt">在线</span>
+                        </a>
+                    </li>
+                    <li title="切换为隐身状态">
+                        <a href="#" class="setting_cho"><em class="W_chat_stat W_chat_stat_offline"></em><span class="setting_txt">隐身</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="state_search_btn">
+                <a href="#" class="WBIM_icon_search_b"></a>
+            </div>
+        </div>
+        <!-- 搜索框 S -->
+        <div class="W_layer layer_searchList hide">
+            <div class="bg">
+                <div class="content">
+                    <div class="searchList_head">
+                        <div class="input_wrap clearfix">
+                            <input class="input W_fl watermark" value="查找联系人" type="text" data-watermark="查找联系人" />
+                            <a href="javascript:void(0)" class="WBIM_icon_closeY icon_pm pm_icon_closeY fl" style="margin: 4px 0 0 3px;"></a>
+                        </div>
+                    </div>
+                    <div class="search_return">
+                        <ul class="list_content_li"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索框 成员列表 S -->
+        <div class="pm_list">
+            <ul class="list_content_li">加载中...</ul>
+        </div>
+        <div class="webim_list_setting">
+            <div class="webim_state_new clearfix">
+                <a href="#" class="user_icon_online" title="当前在线"><i class="WBIM_icon_online"></i>在线</a>
+                <a href="#" class="user_icon_offline" title="当前隐身"><i class="WBIM_icon_offline"></i>隐身</a>
+            </div>
+            <div class="subscribe clearfix">
+                <a href="#" class="user_no_shield" title="当前可接收私信"><i class="icon_no_shield"></i>接收</a>
+                <a href="#" class="user_shield_all" title="当前已屏蔽私信"><i class="icon_shield_all"></i>屏蔽</a>
+            </div>
+        </div>
+    </div>
+    <!-- 私信 成员列表 E -->
+    <!-- 私信 滑入滑出按钮 S -->
+    <a class="pm_fold_btn" href="#" id="js-pm-fold-btn">
+        <span class="btn_click" id="js-pm-btn-click"><em class="arrow_lf"></em></span>
+    </a>
+    <!-- 私信 滑入滑出按钮 E -->
+    <!-- 私信窗口 S -->
+    <div class="pm_chat_box">
+        <div class="pm_chat_con">
+            <!-- 私信窗口 头部 S -->
+            <div class="pm_title">
+                <div class="wbim_titin">
+                    <div class="wbim_tit2_lf">
+                        <p class="tit2_lf_con">
+                            <a class="webim_list_head webim_head_50" href="#">
+                                <span class="head_pic"><img alt="" node-type="user_pic" onerror="javascript:this.src='./images/none.jpg';this.onerror=null;"></span>
+                                <span class="W_chat_stat W_chat_stat_offline"></span>
+                            </a>
+                            <span class="chat_name"><a title="小助手" href="#">小助手</a></span>
+                        </p>
+                    </div>
+                    <div class="wbim_tit2_rt">
+                        <a href="#" onclick="return false;" class="icon_pm pm_icon_settingY" hidefocus="true" title="设置"></a>
+                        <a href="#" onclick="return false;" class="icon_pm pm_icon_minY" hidefocus="true" title="最小化"></a>
+                        <a href="#" onclick="return false;" class="icon_pm pm_icon_closeY" hidefocus="true" title="关闭"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 私信窗口 头部 E -->
+            <!-- 私信窗口 Tabs S -->
+            <div class="pm_chat_wrap"></div>
+            <!-- 私信窗口 Tabs E -->
+            <!-- 私信窗口 聊天内容 S -->
+            <div class="pm_chat_rt">
+                <div class="wbim_chat_up">
+                    <div class="webim_chat_tips webim_tips01">
+                        <a hidefocus="true" href="#" onclick="return false;" class="WBIM_icon_tipsclose"></a>
+                        <span class="icon_pm pm_icon_warnS"></span>
+                        <span class="pm_user_stat">对方当前不在线，可能无法立即回复。</span>
+                    </div>
+                    <div class="wbim_chat_list">
+                        <div class="webim_chat_dialogue scroll-pane" id="js-chat-messages">
+                            <div class="webim_dia_top"></div>
+                            <div class="webim_dia_list"></div>
+                        </div>
+                        <div class="pm_shield_tips hide">
+                            <div class="pm_confirm_info">
+                                <p class="wbim_confirm_p">
+                                    <span class="txt"></span>
+                                </p>
+                                <p class="wbim_confirm_btn">
+                                    <a href="#" onclick="return false;" class="WBIM_btn_confirm"><span>确认</span></a>
+                                    <a href="#" onclick="return false;" class="WBIM_btn_cancel"><span>取消</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 私信窗口 聊天内容 E -->
+            <!-- 私信窗口 发送区域 S -->
+            <div class="pm_chat_sendbox">
+                <div class="sendbox_bar clearfix">
+                    <div class="sendbox_ac">
+                        <a hidefocus="true" href="#" class="icon_pm pm_icon_shield" title="屏蔽当前用户"></a>
+                        <a hidefocus="true" href="#" class="icon_pm pm_icon_shieldover" title="取消屏蔽"></a>
+                    </div>
+                    <div class="sendbox_show"></div>
+                </div>
+                <div class="sendbox_box clearfix">
+                    <textarea class="sendbox_area"></textarea>
+                </div>
+                <div class="sendbox_btn clearfix">
+                    <div class="sendbox_btn_r fr">
+                        <div class="btn">
+                            <a href="#" class="WBIM_btn_a fl" hidefocus="true"><span>发送</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 私信窗口 发送区域 E -->
+        </div>
+    </div>
+    <!-- 私信窗口 E -->
+    <!-- 私信迷你窗口 S -->
+    <div class="pm_win_minD pm_min_chat">网友昵称</div>
+    <!-- 私信迷你窗口 E -->
+    <!-- 新私信提示 S -->
+    <div class="pm_win_minD pm_new_msg_num">您有 <span>N</span> 条未读私信</div>
+    <!-- 新私信提示 E -->
+    <!-- 模板：搜索结果列表 -->
+    <script type="text/template" id="tpl_search_list">
+        <li class="clearfix" data-userid="__ID__">
+            <div class="list_head fl">
+                <span class="head_pic"><img src="__IMG__" alt=""></span>
+            </div>
+            <div class="list_name fl">
+                <span class="user_name">__NAME__</span>
+            </div>
+        </li>
+    </script>
+    <!-- 模板：没有搜索结果 -->
+    <script type="text/template" id="tpl_search_none">
+        <li style="line-height: 30px; text-align: center; cursor: none;">没有符合条件的联系人</li>
+    </script>
+    <!-- 模板：聊天区域提示信息 -->
+    <script type="text/template" id="tpl_chat_tips">
+        <div class="dialog_chat_tips">
+            <span class="icon_pm pm_icon_warnS"></span><span class="content"></span>
+        </div>
+    </script>
+    <!-- 模板：查看历史消息 -->
+    <script type="text/template" id="tpl_show_history">
+        <div class="pm_more_msg">
+            <a href="javascript:void(0)" onclick="return false" title="查看更多消息"><i class="pm_icon_clock"></i>查看更多消息</a>
+        </div>
+    </script>
+    <!-- 模板：历史消息分割线 -->
+    <script type="text/template" id="tpl_message_history">
+        <div class="webim_msg_end">以上是历史消息</div>
+    </script>
+    <!-- 模板：私信内容 -->
+    <script type="text/template" id="tpl_message_content">
+        <div class="webim_dia_box __CLASS_LR__">
+            <div class="dia_info"><span class="info_date">__TIME__</span></div>
+            <div class="webim_dia_bg">
+                <div class="dia_con">
+                    <p class="dia_txt">__MESSAGE__</p>
+                </div>
+                <div class="msg_arr icon_pm"></div>
+            </div>
+        </div>
+    </script>
+    <!-- 模板：好友列表 -->
+    <script type="text/template" id="tpl_user_item">
+        <li class="clearfix" id="user_items___USERID__" data-userid="__USERID__">
+            <div class="list_head head_30"><span class="head_pic"><img class="user_item_img" src="__PIC__" title="__USER_NAME__" onerror="javascript:this.src='./images/none.jpg';this.onerror=null;" /></span><span class="W_chat_stat __CLASS_STAT__"></span><span class="WBIM_icon_new __NEW_MESSAGE__"></span></div>
+        </li>
+    </script>
+</div>
+<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/util/swfobject.js"></script>
+<script type="text/javascript">
+(function(window) {
+
+    var first_init = 1;
+    var btn = $('#js-pm-fold-btn');
+
+    if (!btn.length) {
+        return;
+    }
+
+    $('body')
+        .append('<div id="flashContent" style="display: none;"><p></p></div>')
+        .append('<script type="text/javascript" src="js/jquery.pm.js"><\/script>');
+
+    $('#js-pm-container').removeClass('pm_container_hide').find('.pm_main').show();
+    $('#js-pm-btn-click').show().find('em').attr('class', 'arrow_rg');
+
+}(window));
+</script>
