@@ -191,24 +191,16 @@
         </li>
     </script>
 </div>
+
+
+<div id="flashContent" style="display: none;"><p></p></div>
+
 <script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/util/swfobject.js"></script>
+<script type="text/javascript" src="js/jquery.pm.js"></script>
 <script type="text/javascript">
 (function(window) {
-
-    var first_init = 1;
-    var btn = $('#js-pm-fold-btn');
-
-    if (!btn.length) {
-        return;
-    }
-
-    $('body')
-        .append('<div id="flashContent" style="display: none;"><p></p></div>')
-        .append('<script type="text/javascript" src="js/jquery.pm.js"><\/script>');
-
     $('#js-pm-container').removeClass('pm_container_hide').find('.pm_main').show();
     $('#js-pm-btn-click').show().find('em').attr('class', 'arrow_rg');
-
 }(window));
 </script>

@@ -16,7 +16,7 @@
             }
 
             var PM = factory(jQuery);
-            PM.pm.userid_myself = Number(window.G.getCookie('userId'));
+            PM.pm.userid_myself = 9527; // @todo: Use real userid
             PM.pm.is_show_fold_btn = false;
             PM.init();
         }
@@ -1913,7 +1913,7 @@
                     };
 
                 window.swfobject.embedSWF(
-                    WEB_HOST + "lib/client.swf", "flashContent", "1", "1",
+                    WEB_HOST + "js/util/client.swf", "flashContent", "1", "1",
                     swfVersionStr, xiSwfUrlStr, flashvars, params, attributes);
             };
 
