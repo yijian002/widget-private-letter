@@ -87,7 +87,7 @@
                     .replace(/__NAME__/g, msg.name)
                     .replace(/__MESSAGE__/g, msg.msg)
                     .replace(/__NUMBER__/g, msg.count);
-                window.external.notifyFeeBubble('网吧私信提示', htmls); // 冒泡提示
+                window.external.notifyFeeBubble('私信提示', htmls); // 冒泡提示
                 // 保存客户端跳转的数据
                 fee_messages.user_name = msg.name;
                 fee_messages.user_id = msg.userId;
@@ -355,7 +355,7 @@
             user_info.userName = user_name;
             user_info.userOnline = is_online;
             if (user_info.userPic === '') {
-                user_info.userPic = window.G.IMG_PATH + 'img/gamecenter/none.png';
+                user_info.userPic = window.G.IMG_PATH + 'images/none.png';
             }
 
             this.showHideChatWin('show'); // Show user chat window
@@ -471,7 +471,7 @@
                     .html(userInfo.userName)
                     .attr({
                         'title': userInfo.userName,
-                        'href': window.G.webUrl + 'gamecenter/lol-user-' + userInfo.userId + '.html?pageCode=PM'
+                        'href': window.G.webUrl + '/user-' + userInfo.userId + '.html?pageCode=PM' // @todo
                     });
                 if (userInfo.userId === SYS_USER_ID) {
                     $name.attr('href', '#');
